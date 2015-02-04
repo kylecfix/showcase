@@ -9,6 +9,9 @@ class WelcomeController < ApplicationController
 
   def contact
   end
+
+  def portfolio
+  end
   
   private
   def set_name
