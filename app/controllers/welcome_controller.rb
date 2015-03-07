@@ -1,13 +1,13 @@
 class WelcomeController < ApplicationController
   before_action :set_name
 
-  def index
+  def blog
   end
 
   def about
   end
 
-  def contact
+  def home
   end
 
   def portfolio
