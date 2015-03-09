@@ -1,3 +1,4 @@
+
 <%= form_for(@work) do |f| %>
   <% if @work.errors.any? %>
     <div id="error_explanation">
@@ -12,14 +13,18 @@
   <% end %>
 
   <div class="field form-group">
-    <h3><span class="label label-primary"><%= f.label :name %></span><h3>
+    <h3><span class=words  class="label label-primary"><%= f.label :name %></span><h3>
     <%= f.text_field :name, class: "form-control" %>
   </div>
   <div class="field form-group">
-    <h3><span class="label label-primary"><%= f.label :description %></span><h3>
+    <h3><span class=words  class="label label-primary"><%= f.label :description %></span><h3>
     <%= f.text_field :description, class: "form-control" %>
   </div>
-  <div class="actions form-group">
-    <%= f.submit class: "btn btn-danger" %>
+   <div class="field form-group">
+    <h3><span class=words  class="label label-primary"><%= f.label :url %></span><h3>
+    <%= f.text_field :url, class: "form-control" %>
+  </div>
+  <div class=words class="actions form-group">
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>

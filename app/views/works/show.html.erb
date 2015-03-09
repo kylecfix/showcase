@@ -1,16 +1,23 @@
+
 <p id="notice"><%= notice %></p>
 
 <h3>
-  <span class="label label-danger">
+  <span class=words class="label label-danger">
   	<strong>Name:</strong></span>
   	<%= @work.name %>
 </h3>
 
 <h3>
-  <span class="label label-danger">
+  <span class=words class="label label-danger">
   	<strong>Description:</strong></span>
     <%= @work.description %>
 </h3>
 
-<span class="label label-primary"><%= link_to 'Edit', edit_work_path(@work) %></span> |
-<span class="label label-primary"><%= link_to 'Back', works_path %></span>
+<h3>
+  <span class=words class="label label-danger">
+  	<strong>URL:</strong></span>
+    <%= @work.url %>
+</h3>
+
+<span class=words class="label label-primary"><%= link_to 'Edit', edit_work_path(@work) %></span> |
+<span class=words class="label label-primary"><%= link_to 'Back', works_path %></span>
